@@ -1,0 +1,10 @@
+pixels - print css
+relative
+perrcent - wrt parent, widths
+wrt vp- vmin, vmax, 
+wrt font szies- em(parent container), rem(root html)
+
+margins
+can collapse anytime they touch each other
+if first child in an element has margin top, that can merge with parents margin top
+out here we can add padding on the parent to prevent parents margin from merging with the childs
