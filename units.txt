@@ -8,3 +8,5 @@ margins
 can collapse anytime they touch each other
 if first child in an element has margin top, that can merge with parents margin top
 out here we can add padding on the parent to prevent parents margin from merging with the childs
+you can only nest other inline elements inside inline elements
+inline elements will only respect margin and padding placed on left and right
