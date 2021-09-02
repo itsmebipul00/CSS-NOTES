@@ -10,3 +10,16 @@ if first child in an element has margin top, that can merge with parents margin 
 out here we can add padding on the parent to prevent parents margin from merging with the childs
 you can only nest other inline elements inside inline elements
 inline elements will only respect margin and padding placed on left and right
+
+styling links
+links have different states that we can style:
+*default link state => a:link
+*hover => a:hover
+*visited => a:focus
+*hover => a:hover
+*active => a:active
+
+shorthand propertities goes clockwise: top right bottom left
+
+sometimes we need something which is inline but we can set the margin and padding, so here we can use display:inline-block
+
