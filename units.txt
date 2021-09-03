@@ -33,3 +33,4 @@ approaching specificity:
 general rules put on the element selectors eg. body, paragraphs, headings and rest of eerything else gets a class
 
 Compound selectors and specificity
+element= 1point element= 10points class= 100points
