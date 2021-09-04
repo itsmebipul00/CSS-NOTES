@@ -33,4 +33,13 @@ approaching specificity:
 general rules put on the element selectors eg. body, paragraphs, headings and rest of eerything else gets a class
 
 Compound selectors and specificity
-element= 1point element= 10points class= 100points
+element= 1point class= 10points id= 100points
+
+to avoid unintented specificity clashes avoid using compound selectors instead give everything a single class.
+Instead of using compound selectors use multiple generic classes in your html element(follows DRY principle)
+
+While using google fonts, fonts need to be downloaded which can be slow and fonts can shift(FOUT-FLASH OF UNSTYLED TEXT). So downloading only what yo need to use helps.
+
+Links have default style set on them(blue color and underlined text-decoration ) so they do not inherit their parent property.
+Likewise, headings are bold by default so they dont inherit font-weight. To change these you will have to overwrite this explicitly. You could also use color:inherit property for links in this case which makes the color of the link inherit from its parent.
+
