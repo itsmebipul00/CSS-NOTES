@@ -46,3 +46,19 @@ We always want the last element of something not to have the extra spacing.
 
 justify content on vertical axis (space bw space around space evenly: applied to flex childerns)
 align items on horixonal axis(flex-start center etc): everything is shrunk to fit the content whats inside of it.
+
+media queries let us add new targets that target specific conditions
+@media media-type and (media-features){...}
+medai features are specific things about the media types
+types:
+screen
+print
+speech
+
+featurs:
+widths, orientation, specific features(like hover)
+orientation: landscape means that when it is wider than its tall and potrait means when it is taller than it is wide(switching heights)
+by default flex direstion is row which menas that parent is a row and its children are all columns
+
+media queries should always come after the defult selector you have
+text align center will always center text within its parent
