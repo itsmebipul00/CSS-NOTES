@@ -43,3 +43,6 @@ While using google fonts, fonts need to be downloaded which can be slow and font
 Links have default style set on them(blue color and underlined text-decoration ) so they do not inherit their parent property.
 Likewise, headings are bold by default so they dont inherit font-weight. To change these you will have to overwrite this explicitly. You could also use color:inherit property for links in this case which makes the color of the link inherit from its parent.
 We always want the last element of something not to have the extra spacing. 
+
+justify content on vertical axis (space bw space around space evenly: applied to flex childerns)
+align items on horixonal axis(flex-start center etc): everything is shrunk to fit the content whats inside of it.
