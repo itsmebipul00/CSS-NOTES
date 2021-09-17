@@ -62,3 +62,6 @@ by default flex direstion is row which menas that parent is a row and its childr
 
 media queries should always come after the defult selector you have
 text align center will always center text within its parent
+
+while writing markup focus on the complicated part of the design, while doing css focus on the mobile first
+there should usually be only one main tag per page
