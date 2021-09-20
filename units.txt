@@ -65,3 +65,14 @@ text align center will always center text within its parent
 
 while writing markup focus on the complicated part of the design, while doing css focus on the mobile first
 there should usually be only one main tag per page
+
+max-width:570px, means that it has has a maximum size of 570px but it is very happpy to shrink down
+padding, margin => em, font-sizes=> rem
+1rem = 16px
+value in em= value in px / fontsize in rem * 16 (value in px)
+when we give max-width to the image, which means if the parent is smaller than the image, the image shrinks with it. This is v.imp 
+max-width/height means it is allowed to be smaller than the given value, while min-width/height means it is allowed to be larger than the the given value
+with widths its usually max, with heights it is min(ex: 100vh)
+
+align for cross axis
+justify for main axis
