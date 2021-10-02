@@ -76,3 +76,6 @@ with widths its usually max, with heights it is min(ex: 100vh)
 
 align for cross axis
 justify for main axis
+adding line-height of 1.6 to your body makes things look really cool 
+
+
