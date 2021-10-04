@@ -86,4 +86,8 @@ h1 + p=> immediate sibling of h1
 h1 ~ p => all parags siblings after h1
 
 always add a background-color while using backgrounf-image 
+viewport units are resposive units
+vmin, vmax, vw, vh
 
+by default box-sizing is content-box
+when we change it to border-box, it means that padding and border are inncluded in the total width of something instead of being added on top of that width 
