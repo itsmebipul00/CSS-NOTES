@@ -78,4 +78,12 @@ align for cross axis
 justify for main axis
 adding line-height of 1.6 to your body makes things look really cool 
 
+working with background images
+if there is text on top of a image use background image
+background-position: center and b-size: cover
+
+h1 + p=> immediate sibling of h1
+h1 ~ p => all parags siblings after h1
+
+always add a background-color while using backgrounf-image 
 
