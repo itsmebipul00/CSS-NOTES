@@ -91,3 +91,118 @@ vmin, vmax, vw, vh
 
 by default box-sizing is content-box
 when we change it to border-box, it means that padding and border are inncluded in the total width of something instead of being added on top of that width 
+
+Flexbox
+flex-wrap is default to no-wrap, setting it to wrap makes the flex-items fit inside the border
+default for align-items is strech (apply a min-height on the flex container to see the effect visually)
+if you switch the flex-direction the roles of justify-content and align-items also do (basiclally entire flex container switches the axis they are initially on)
+align-content works with all of the content of the container while align-items works on an individual row/column
+align-content and justify-content work similarly apart from the fact that they work on opposite axis
+flex-grow by default is 0, flex-grow increases the flex-item faster. same with flex-shrink but its default is 1. increses and decrease in different rates
+when flex-direction is row, main axis is x-axis and cross axis is is y-axis, vice versa
+When flex-direction is row, flex-basis controls width but when flex-direction is column, flex-basis controls height. if you're in flex-direction: column, the width property would be needed for sizing flex items horizontally and vice versa
+flex: grow, shrink, basis
+defaulT: 0, 1, auto , it does not grow , it will shrink and it will automatically look at its width
+0 => if it hits its desired width, it will not grow
+1 => shrinking at a normal rate
+auto => default to its(content's) width
+flex: 1 => /* grow: 1, flex-basis: 0 */
+basis: 0 means to shrink as much as possible
+flex: auto => flex: 1 1 auto;
+align-self works on the flex-item
+
+setting margin top and bottom to auto will center vertically 
+object fit (in cover it gets clipped according to its dimensions)
+contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+**always keep in mind to use space-between like propertities instead of margin
+
+parent-flex childrens-basis:100% => ensures all direct children of parent are equal width.
+parent-flex, wrap childrens-flex:1 1 10em => grid layout where columns of different rows can be of different widths
+parent-flex, wrap children> *:nth-child(1): flex: 1 1 70%, min-width:25ch && children> *:nth-child(2): flex: 1 1 30%, min-width: 15ch => content and sidebar with no media queries
+
+limitation of flexbox
+deals with only 1d at a time i.e either we will be working on a vertical direction or horizontal direction at a time
+
+grid allows us to split the parent element into both rows and columns
+margin no longer collapse and the direct children will be grid items
+
+anytime you define the column in grid, you are defining the width of the column
+and anytime you define row you are defining the height of each row
+grid-template-columns, grid-template-rows
+grid-template: 100px 400px / 250px 250px 250px; //shorthand rows/columns
+
+to tell the grid-items explicitly where they should be placed we use:
+grid-column-start, grid-column-end, grid-row-start, grid-row-end
+shorthand
+grid-row: start/end
+grid:column: start/end
+
+grids overlap if they find space and if you have explicitly mentioned it
+grid-column: 1/-1 => strech all the way from begining to the end
+
+Much easier than counting column nos
+grid-column: 2 / span 2; => start at 2 , span 2 colms horizontally and then end
+grid-row: span 2; => just span 2wice vertically
+
+auto keyword matches the height/width of the content
+if we dont declare the grid-template-row/column is auto
+
+justify-self, align-self for positioning individual items
+justify-items, align-items for positioning all grid items horizonatally/ vertically respectively
+
+Applied to parent grid
+grid-column-gap: 2em;
+grid-row-gap: 5em;
+
+When we declare display: grid on a parent element, automatically grid items fall into rows
+If you dont explicitly create rows and colums for grid items though they exist, they are implicitly created and defaulted to auto(height and width of the content)
+Changing dimensions of implicit grids:
+grid-auto-rows, grid-auto-columns
+
+Grid Area
+.main-content{
+grid-area: content;
+}
+
+minmax
+grid-template-columns: 100px minmax(200px, 500px) minmax(100px, 200px) 100px;
+minmax(minwidth, maxwidth)
+
+fr unit
+1fr => flex: 1 1 auto
+fr doesnt work as a minwidth
+grid-template-columns: 250px minmax(50px, 1fr) 1fr;
+
+repeat() => multiple cols of same width
+grid-template-columns: 200px repeat(3, 1fr); instead of 3 while using repeat we can use auto-fit(fit colms even if empty) and auto-fill(add new colms only when not empty i.e fit cols in the available space) as well
+
+//add new cols while expanding screen size, if a col of atleast 200px can fit in(even if empty)
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+---------------------------------------------------------------
+The .sr-only class hides an element to all devices except screen readers i.e it will be visible in the DOM but not on the screen unlike display: none property which removes it from the DOM.
+
+.flow > * + * { //this is same as .flow > *:not(:first-child)
+    margin-top: 1rem;
+    outline: 1px solid red;
+}
+
+.card h1,
+.card h2,
+.card h3
+
+aspect-ratio: 2 / 1; => twicw as wide as it is high
+place-items: center; => shorthand for align items and justify items
+
+aria => assesible rich internet applications
+
+Pseudo elements and Pseudo class
+: pc- deals with state
+:: pe- selecting only part of an element
+
+p::before - before all content of the paragraph
+pseudo elements on images dont work
+pseudo elements are inline by default
+before and after are especially used for design elements
