@@ -170,7 +170,7 @@ grid-template-columns: 100px minmax(200px, 500px) minmax(100px, 200px) 100px;
 minmax(minwidth, maxwidth)
 
 fr unit
-1fr => flex: 1 1 auto
+1fr => flex: 1 1 auto (grow as much as all the cotent occupies all the width)
 fr doesnt work as a minwidth
 grid-template-columns: 250px minmax(50px, 1fr) 1fr;
 
