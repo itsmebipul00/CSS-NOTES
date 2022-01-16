@@ -180,6 +180,7 @@ grid-template-columns: 200px repeat(3, 1fr); instead of 3 while using repeat we 
 //add new cols while expanding screen size, if a col of atleast 200px can fit in(even if empty)
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
+//add new cols while expanding screen size, if a col of atleast 200px can fit in(not an empty one though)
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 ---------------------------------------------------------------
 The .sr-only class hides an element to all devices except screen readers i.e it will be visible in the DOM but not on the screen unlike display: none property which removes it from the DOM.
@@ -206,3 +207,12 @@ p::before - before all content of the paragraph
 pseudo elements on images dont work
 pseudo elements are inline by default
 before and after are especially used for design elements
+
+keep in mind of the stacking context while using z-index
+margin-left/right/top/bottom: auto works when parent is flex(l/r->row, t/b->col)
+margins dont collapse in flex format
+
+inline The element doesn’t start on a new line and only occupy just the width it requires. You can’t set the width or height.
+inline-block It’s formatted just like the inline element, where it doesn’t start on a new line. BUT, you can set width and height values.
+block The element will start on a new line and occupy the full width available. And you can set width and height values.
+
