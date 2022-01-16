@@ -209,7 +209,7 @@ pseudo elements are inline by default
 before and after are especially used for design elements
 
 keep in mind of the stacking context while using z-index
-margin-left/right/top/bottom: auto works when parent is flex(l/r->row, t/b->col)
+margin-left/right/top/bottom: auto (l/r->row, t/b->col) creates huge margin on t/l/b/r
 margins dont collapse in flex format
 
 inline The element doesn’t start on a new line and only occupy just the width it requires. You can’t set the width or height.
