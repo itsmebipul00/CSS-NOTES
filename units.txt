@@ -216,3 +216,7 @@ inline The element doesn’t start on a new line and only occupy just the width 
 inline-block It’s formatted just like the inline element, where it doesn’t start on a new line. BUT, you can set width and height values.
 block The element will start on a new line and occupy the full width available. And you can set width and height values.
 
+while using image wrap in a div so that you could fix the aspect ratio of the image as you want it by manipulating its parent div (imp. img, width:100% and display: block).
+Also inline elements have a line height, so thats why display block is imp in case of imgs, since img behaves as an inline element
+Practise using psedo elements for design elements
+
