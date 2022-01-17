@@ -74,8 +74,15 @@ when we give max-width to the image, which means if the parent is smaller than t
 max-width/height means it is allowed to be smaller than the given value, while min-width/height means it is allowed to be larger than the the given value
 with widths its usually max, with heights it is min(ex: 100vh)
 
-align for cross axis
-justify for main axis
+Direction and axis of flex switch together
+In case of flex-dir: row
+align for cross axis (ver)
+justify for main axis (hor)
+
+In case of flex-dir: column
+align for main axis (hor)
+justify for cross (ver)
+
 adding line-height of 1.6 to your body makes things look really cool 
 
 working with background images
@@ -100,7 +107,9 @@ align-content works with all of the content of the container while align-items w
 align-content and justify-content work similarly apart from the fact that they work on opposite axis
 flex-grow by default is 0, flex-grow increases the flex-item faster. same with flex-shrink but its default is 1. increses and decrease in different rates
 when flex-direction is row, main axis is x-axis and cross axis is is y-axis, vice versa
-When flex-direction is row, flex-basis controls width but when flex-direction is column, flex-basis controls height. if you're in flex-direction: column, the width property would be needed for sizing flex items horizontally and vice versa
+
+When flex-direction is row, flex-basis controls width but when flex-direction is column, flex-basis controls height.
+If you're in flex-direction: column, the width property would be needed for sizing flex items horizontally and vice versa
 flex: grow, shrink, basis
 defaulT: 0, 1, auto , it does not grow , it will shrink and it will automatically look at its width
 0 => if it hits its desired width, it will not grow
@@ -115,7 +124,7 @@ setting margin top and bottom to auto will center vertically
 object fit (in cover it gets clipped according to its dimensions)
 contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
 cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
-**always keep in mind to use space-between like propertities instead of margin
+**always keep in mind to use space-between like propertities instead of margin, or if there are only 2 elements(margin-left/right/top/bottom works perfectly fine)
 
 parent-flex childrens-basis:100% => ensures all direct children of parent are equal width.
 parent-flex, wrap childrens-flex:1 1 10em => grid layout where columns of different rows can be of different widths
@@ -219,4 +228,10 @@ block The element will start on a new line and occupy the full width available. 
 while using image wrap in a div so that you could fix the aspect ratio of the image as you want it by manipulating its parent div (imp. img, width:100% and display: block).
 Also inline elements have a line height, so thats why display block is imp in case of imgs, since img behaves as an inline element
 Practise using psedo elements for design elements
+
+FLEX wrap works with align content
+justify-self and justify-items are ignored in flex
+
+Revise flexbox
+https://codesandbox.io/s/flexbox-hkzbv?file=/styles.css
 
