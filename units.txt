@@ -135,7 +135,9 @@ deals with only 1d at a time i.e either we will be working on a vertical directi
 
 grid allows us to split the parent element into both rows and columns
 margin no longer collapse and the direct children will be grid items
-
+grid auto flow is by default row, you could change it to col
+adjust the size of grids automatically/implicity, use grid auto col
+ 
 anytime you define the column in grid, you are defining the width of the column
 and anytime you define row you are defining the height of each row
 grid-template-columns, grid-template-rows
