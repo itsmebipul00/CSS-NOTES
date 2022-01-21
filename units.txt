@@ -237,3 +237,6 @@ justify-self and justify-items are ignored in flex
 Revise flexbox
 https://codesandbox.io/s/flexbox-hkzbv?file=/styles.css
 
+Containing box- Nearset ansector which is a block container.
+fixed things to be removed from grid
+
