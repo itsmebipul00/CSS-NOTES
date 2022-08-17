@@ -240,3 +240,29 @@ https://codesandbox.io/s/flexbox-hkzbv?file=/styles.css
 Containing box- Nearset ansector which is a block container.
 fixed things to be removed from grid
 
+
+Animations
+frames per second
+24-60fps
+frame rates per second
+For a human eye to perceive human eye needs 60 frames per second such that animation happens
+Why?
+-Improves user perception and memory of the brand
+-Guide user actions
+-Helps users navigate effectively
+-Providing context in digital space (making things more natural)
+-Nudge or delight
+-microinteractions
+
+
+
+
+
+
+
+
+
+
+
+
+
